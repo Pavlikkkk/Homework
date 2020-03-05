@@ -44,8 +44,8 @@ class ConnectionDB:
         self.trusted_con = 'yes'
         self.conn = pyodbc.connect('Driver={SQL Server};'
                                    'Server=' + self.server + ';'
-                                   'Database=' + self.database + ';'
-                                   'Trusted_Connection=' + self.trusted_con + ';')
+                                                             'Database=' + self.database + ';'
+                                                                                           'Trusted_Connection=' + self.trusted_con + ';')
 
 
 class ParseFiles(ReadFiles, ConnectionDB):
@@ -140,8 +140,7 @@ class ParseFiles(ReadFiles, ConnectionDB):
         return self.list_for_insert, cnt_up, cnt_lo
 
 
-# --------------------------------------------------------------------------------------------------------
+if __name__ == '__main__':
+    x = ParseFiles(r'd:\Python_hometask\input_files', r'd:/Python_hometask/incorrect_input_folder/')
 
-x = ParseFiles(r'd:\Python_hometask\input_files', r'd:/Python_hometask/incorrect_input_folder/')
-
-print(x.parser_xml())
+    print(x.parser_xml())
