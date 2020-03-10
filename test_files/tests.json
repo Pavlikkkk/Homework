@@ -1,0 +1,12 @@
+{ "test1": {
+  "query": "select count(*) from Sales.SalesOrderHeaderSalesReason",
+  "table": "SalesOrderHeaderSalesReason",
+  "expected_result": "27647" },
+
+  "test2": {
+    "query": "select count(*) from Sales.SalesPerson",
+    "table": "SalesPerson",
+  "expected_result": "17"
+  }
+
+}
