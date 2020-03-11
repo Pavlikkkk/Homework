@@ -1,0 +1,10 @@
+{
+"dev":{
+
+"server": "EPBYGOMW001A\\SQL17",
+"database": "AdventureWorks2017",
+  "directory" : "d:/Python_framework/test_files/",
+  "output_directory": "d:/Python_framework/result/tests.json"
+
+}
+}
