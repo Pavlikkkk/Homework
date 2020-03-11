@@ -1,0 +1,7 @@
+{  "test3": {
+    "query": "select count(*) from Sales.SalesPersonQuotaHistory",
+    "table": "SalesPersonQuotaHistory",
+  "expected_result": "162"
+  }
+
+}
