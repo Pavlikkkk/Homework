@@ -3,6 +3,7 @@ import json
 
 class Configurator:
 
+
     def __init__(self, test_case):
         with open('config.json') as f:
             self.config = json.load(f)
@@ -27,5 +28,6 @@ class Configurator:
 if __name__ == '__main__':
     x = Configurator('row_count')
     print(x.get_test_case())
+
 
 

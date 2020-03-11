@@ -49,3 +49,4 @@ class Connect(Configurator):
 if __name__ == '__main__':
     x = Connect(r'EPBYGOMW001A\SQL17', 'AdventureWorks2017', 'row_count')
     print(x.queries_count())
+

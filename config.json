@@ -1,4 +1,5 @@
 {
+
 "row_count":{
 
         "server": "EPBYGOMW001A\\SQL17",
@@ -14,4 +15,6 @@
         "directory" : "d:/Python_framework/test_files_reg/",
     "output_directory": "d:/Python_framework/result/tests.json"
   }
+
+
 }
