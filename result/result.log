@@ -1,0 +1,5 @@
+2020-03-11 14:28:57,576:INFO:Test started
+2020-03-11 14:28:57,576:INFO:Success for SalesOrderHeaderSalesReason, actual result: 27647, expected result 27647
+2020-03-11 14:28:57,576:INFO:Success for SalesPerson, actual result: 17, expected result 17
+2020-03-11 14:28:57,577:INFO:Fail for SalesPersonQuotaHistory, actual result: 163, expected result 162
+2020-03-11 14:28:57,577:INFO:Test finished

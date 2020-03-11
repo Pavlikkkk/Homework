@@ -1,7 +1,6 @@
 import os
 import json
 from configurator import Configurator
-from connector import Connect
 import logging
 
 
@@ -22,8 +21,8 @@ def logger_decorator(method):
 class Execute(Configurator):
     """Выполняет проверку"""
 
-    def __init__(self):
-        super().__init__()
+    def __init__(self, test_case):
+        super().__init__(test_case)
         self.list_files = []
         self.directory = Configurator.get_directory(self)  # r'd:/Python_framework/test_files/'
         self.output_directory = Configurator.get_output_directory(self)
@@ -51,6 +50,6 @@ class Execute(Configurator):
 
 
 if __name__ == '__main__':
-    x = Execute()
+    x = Execute('row_count')
 
     print(x.parse_test_files())
